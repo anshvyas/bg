@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <title>Kanishk | Search Results</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!-- Mobile support -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Material Design fonts -->
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bootstrap Material Design -->
+  <link href="css/bootstrap-material-design.css" rel="stylesheet">
+  <link href="css/ripples.min.css" rel="stylesheet">
+
+  <!-- Dropdown.js -->
+  <link href="css/master/jquery.dropdown.css" rel="stylesheet">
+
+  <!-- jQuery -->
+  
+
+  <style type="text/css">
+
+
+.carousel-control.left, .carousel-control.right {
+    background-image: none
+}
+
+body{
+  min-height: 2000px;
+}
+
+.cost-food{
+  margin-top: 16px; font-weight: bolder;
+}
+
+.chef-post{
+  color: #bdbdbd;
+}
+
+.special-tag{
+  position: relative; margin-top: 30px; margin-left: -6px; z-index: 1;
+}
+
+.rating-star{
+  position: relative; float: right; margin-top: -40px; margin-right: 10px; z-index: 1;
+}
+
+.veg{
+  position: relative; margin-top: 160px; float: right; margin-right: 15px; z-index: 1; color: green;
+}
+
+.non-veg{
+  position: relative; margin-top: 160px; float: right; margin-right: 15px; z-index: 1; color: red;
+}
+
+.food-img{
+  position: relative; margin-top: -50px;
+}
+
+.meal_time{
+  color: #ababab;
+}
+  </style>
+
+</head>
+<body>
+
+<div class="container-fluid">
+
+  <div class="row" style="padding:15px;background-color:#fff;">
+    <div class="col-md-1">
+      <img src="" alt="the-logo">
+    </div>
+    <div class="col-md-5">
+      <div class="row">
+        <div class="col-md-2">
+          <a href="">Menu</a>
+        </div>
+        <div class="col-md-3">
+          <a href="">Gift a Meal</a>
+        </div>
+        <div class="col-md-2">
+          <a href="">Party</a>
+        </div>
+        <div class="col-md-3">
+          <a href="" data-toggle="dropdown">More <i class="material-icons">keyboard_arrow_down</i></a>
+          <ul class="dropdown-menu">
+            <li><a href="javascript:void(0)">Dropdown link</a></li>
+            <li><a href="javascript:void(0)">Dropdown link</a></li>
+            <li><a href="javascript:void(0)">Dropdown link</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-5 pull-right">
+      <div class="row">
+        <div class="col-md-1 pull-right">
+          <a href=""><i class="material-icons">add_shopping_cart</i></i></a>
+        </div>
+        <div class="col-md-4 pull-right">
+          <a href="">SIGN UP/LOGIN</a>
+        </div>
+        <div class="col-md-4 pull-right">
+          <a href=""><i class="material-icons">chat</i></i> CUSTOMER CARE</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div class="row">
+  <div class="col-md-12">
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+      </ol>
+
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <img src="https://i.ytimg.com/vi/y5pAeAuZt2Q/maxresdefault.jpg" alt="..." style="height:300px;" class="img img-responsive">
+
+        </div>
+        <div class="item">
+          <img src="http://sparklin.com/static/images/bus-ticketing-paytm-01.jpg" alt="..." style="height:300px;" class="img img-responsive">
+
+        </div>
+
+      </div>
+
+      <!-- Controls -->
+      <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <nav id="navbar-main" class="navbar navbar-inverse" style="background-color: rgb(255, 255, 255) ! important;">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+          <div id="navbar" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav" style="padding: 0px 28px;text-align:center;color:#000;font-size:16px;">
+              <li class="active"><a href="#"><i class="material-icons">edit_location</i><br>POWAI<br>400076</a></li>
+              <li style="border-right: 2px inset; border-left: 2px #ffffff inset; vertical-align: middle;"><a href="#" id="dropdownDate" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">TODAY<br><span style="font-weight:bolder;">APR 16</span></a>
+                <ul class="dropdown-menu" aria-labelledby="dropdownDate">
+                  <li><a href="#">APR 17</a></li>
+                  <li><a href="#">APR 18</a></li>
+                </ul>
+              </li>
+              <li style="border-right: 2px inset; vertical-align: middle;"><a href="#">BREAKFAST<br><span class="meal_time">09:00 - 11:00 AM</span></a></li>
+              <li style="border-right: 2px inset; vertical-align: middle;"><a href="#">LUNCH<br><span class="meal_time">11:00 - 04:00 PM</span></a></li>
+              <li style="border-right: 2px inset; vertical-align: middle;"><a href="#">SNACKS<br><span class="meal_time">04:00 - 07:00 PM</span></a></li>
+              <li style="border-right: 2px inset; vertical-align: middle;"><a href="#">DINNER<br><span class="meal_time">07:00 - 11:30 PM</span></a></li>
+              <li style="border-right: 2px inset; vertical-align: middle;"><a href="#">FLAVOURS<br><span class="meal_time">09:00AM - 11:00 PM</span></a></li>
+              <li style="vertical-align: middle;"><a href="#" id="dropdownFilter" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><i class="material-icons">settings_input_component</i><br>FILTER (0)</a>
+                <ul class="dropdown-menu" aria-labelledby="dropdownFilter">
+                  <li>
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-xs-6">
+                          <a href="#" style="color:#abcdef">RESET</a>
+                        </div>
+                        <div class="col-xs-6">
+                          <a href="#" style="color:#abcdef;text-align:right;">CLOSE</a>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-xs-6">
+                          <div class="row">
+                            MEALS
+                            <div class="col-xs-6">
+                              <button class="btn btn-success btn-circle">Veg</button>
+                            </div>
+                            <div class="col-xs-6">
+                              <button class="btn btn-danger btn-circle">Non-Veg</button>
+                            </div>
+                          </div>
+                          <div class="row">
+                            Cuisines
+                            <div class="col-xs-6">
+                              <button class="btn btn-primary btn-sm">Indian</button>
+                            </div>
+                            <div class="col-xs-6">
+                              <button class="btn btn-primary btn-sm">International</button>
+                            </div>
+                          </div>
+                          <div class="row">
+                            Types of Meal
+                            <div class="col-xs-12">
+                              <div class="checkbox">
+                                <label>
+                                  <input type="checkbox"> Filling Meal
+                                </label>
+                                <label>
+                                  <input type="checkbox"> Light Meal
+                                </label>
+                                <label>
+                                  <input type="checkbox"> Soups and Salads
+                                </label>
+                                <label>
+                                  <input type="checkbox"> Desserts
+                                </label>
+                                <label>
+                                  <input type="checkbox"> Beverages
+                                </label>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-xs-6">
+                          <a href="#" style="color:#abcdef;text-align:right;">CLOSE</a>
+                          <div class="row">
+                            Packed Snacks
+                            <div class="col-xs-12">
+                              <div class="checkbox">
+                                <label>
+                                  <input type="checkbox"> Munchies
+                                </label>
+                                <label>
+                                  <input type="checkbox"> Condiments, dips &amp; spreads
+                                </label>
+                                <label>
+                                  <input type="checkbox"> Packaged drinks
+                                </label>
+                                <label>
+                                  <input type="checkbox"> Health Food
+                                </label>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </nav>
+    </div>
+  </div>
+
+</div>
+  <div class="row">
+    <div class="col-md-5">
+      <hr style="background-color: rgb(171, 171, 171); margin-top: 32px;">
+    </div>
+    <div class="col-md-2">
+      <h3 class="text-center">FILLING MEAL</h3>
+    </div>
+    <div class="col-md-5">
+      <hr style="background-color: rgb(171, 171, 171); margin-top: 32px;">
+    </div>
+  </div>
+  <div class="container" id="results">
+    
+  </div>
+
+
+  <footer>
+    <div class="container well">
+      <div class="row">
+        <div class="col-md-4">
+          <h4><img src="" alt="logo" class="img img-responsive">Worth carving for</h4>
+          <p style="text-align:justify;">Kanishk Mess is an extension of one’s personal kitchen. It serves home-quality food with daily new menus of breakfast, lunch, evening snacks and dinner; along with packaged edibles under the Flavours section. Kanishk Mess is a perfect blend of freshest ingredients, a
+          uthentic recipes, wide variety of cuisines and the expertise of select chefs. Simple everyday meals to exotic indulgence – find them all at Kanishk Mess. </p>
+
+        </div>
+        <div class="col-md-2">
+          <h4>Company</h4>
+          <p class="footer_link"><a href="#">How it works</a></p>
+          <p class="footer_link"><a href="#">Service Areas</a></p>
+          <p class="footer_link"><a href="#">Team</a></p>
+          <p class="footer_link"><a href="#">Believers</a></p>
+          <p class="footer_link"><a href="#">Careers</a></p>
+        </div>
+        <div class="col-md-2">
+          <h4>Legal</h4>
+          <p class="footer_link"><a href="#">Terms and conditions</a></p>
+          <p class="footer_link"><a href="#">Quality control</a></p>
+          <p class="footer_link"><a href="#">Privacy policy</a></p>
+        </div>
+        <div class="col-md-2">
+          <h4>Menu</h4>
+          <p class="footer_link"><a href="#">Lunch</a></p>
+          <p class="footer_link"><a href="#">Dinner</a></p>
+          <p class="footer_link"><a href="#">Flavours</a></p>
+          <p class="footer_link"><a href="#">Sitemap</a></p>
+        </div>
+        <div class="col-md-2">
+          Follow us on
+
+        </div>
+      </div>
+      <div class="row" style="border-top: 2px #ffffff inset;">
+        <div class="col-md-12">
+          <h6 style="text-align:center;">© 2016 Kanishk Mess. All Rights Reserved</h6>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+<script src="js/jquery.js"></script>
+
+<script type="text/javascript">
+/*! Main */
+jQuery(document).ready(function($) {
+  
+    // Fixa navbar ao ultrapassa-lo
+    var navbar = $('#navbar-main'),
+        distance = navbar.offset().top,
+        $window = $(window);
+
+    $window.scroll(function() {
+        if ($window.scrollTop() >= distance) {
+            navbar.removeClass('navbar-fixed-top').addClass('navbar-fixed-top');
+            $("body").css("padding-top", "70px");
+        } else {
+            navbar.removeClass('navbar-fixed-top');
+            $("body").css("padding-top", "0px");
+        }
+    });
+});
+</script>
+<script type="text/javascript">
+   var request=$.ajax({
+                  type:"GET",
+                  url:"php/store/store.php",
+                  dataType:"json",
+                });
+
+
+     
+
+
+   request.success(function(data){
+
+       
+   
+      console.log(data);
+
+      var no_of_rows=Math.ceil(data.count/3);
+
+      for(var i=0;i<no_of_rows;++i)
+      {
+        $('#results').append('<div class="row" id="meal_list_'+i+'"></div>');
+      }
+
+      var append_id=0;
+      counter=0;
+      data.meals.forEach(function(element){
+
+          for (var i=0;i<element.length;++i)
+          {
+
+            var data={
+              avail_flag:element[i].avail_flag,
+              cost:element[i].cost,
+              meal_id:element[i].meal_id,
+              meal_image:element[i].meal_image,
+              meal_name:element[i].meal_name,
+              seller_name:element[i].name,
+              quantity:element[i].quantity,
+              seller_id:element[i].seller_id
+
+            };
+
+            var to_append='<div class="col-md-4"><div class="well"><div class="special-tag"><span class="label label-warning"style="padding: 5px; margin-top: 15px;">Special Lunch</span></div><div class="rating-star"><span class="label label-default"><span class="glyphicon glyphicon-star" aria-hidden="true"></span> 4.0</span></div><div class="veg"><i class="material-icons">adjust</i></div> <div class="food-img"><img src="'+data.meal_image+'" class="img-responsive img-thumbnail"></div><div class="food-name"><h4>'+data.meal_name+'</h4></div><div class="row"><div class="col-md-6"><h4 class="cost-food">Rs. '+data.cost+'</h4> </div> <div class="col-md-6"><button class="btn btn-raised btn-warning pull-right">+ ADD</button> </div></div><hr> <div class="row"><div class="col-md-3"><img src="http://thumbs.ifood.tv/files/image/3b/7f/561038-atul-kochhar.jpg" class="img-responsive img-circle" style="height: 60px; width: 60px;"></div><div class="col-md-9"><h4 class="chef-name">'+data.seller_name+'</h4><h5 class="chef-post">Hola MasterChef</h5></div></div></div></div>';
+
+              counter++;
+              if(counter/3>1)
+              {
+                counter=0;
+                append_id+=1;
+              }
+
+            $('#meal_list_'+append_id).append(to_append);
+          }
+
+      });
+
+   });
+
+
+</script>>
+<!-- Open source code -->
+<script>
+  window.page = window.location.hash || "#about";
+
+  $(document).ready(function () {
+    if (window.page != "#about") {
+      $(".menu").find("li[data-target=" + window.page + "]").trigger("click");
+    }
+  });
+
+  $(window).on("resize", function () {
+    $("html, body").height($(window).height());
+    $(".main, .menu").height($(window).height() - $(".header-panel").outerHeight());
+    $(".pages").height($(window).height());
+  }).trigger("resize");
+
+  $(".menu li").click(function () {
+    // Menu
+    if (!$(this).data("target")) return;
+    if ($(this).is(".active")) return;
+    $(".menu li").not($(this)).removeClass("active");
+    $(".page").not(page).removeClass("active").hide();
+    window.page = $(this).data("target");
+    var page = $(window.page);
+    window.location.hash = window.page;
+    $(this).addClass("active");
+
+
+    page.show();
+
+    var totop = setInterval(function () {
+      $(".pages").animate({scrollTop: 0}, 0);
+    }, 1);
+
+    setTimeout(function () {
+      page.addClass("active");
+      setTimeout(function () {
+        clearInterval(totop);
+      }, 1000);
+    }, 100);
+  });
+
+  function cleanSource(html) {
+    var lines = html.split(/\n/);
+
+    lines.shift();
+    lines.splice(-1, 1);
+
+    var indentSize = lines[0].length - lines[0].trim().length,
+        re = new RegExp(" {" + indentSize + "}");
+
+    lines = lines.map(function (line) {
+      if (line.match(re)) {
+        line = line.substring(indentSize);
+      }
+
+      return line;
+    });
+
+    lines = lines.join("\n");
+
+    return lines;
+  }
+
+  $("#opensource").click(function () {
+    $.get(window.location.href, function (data) {
+      var html = $(data).find(window.page).html();
+      html = cleanSource(html);
+      $("#source-modal pre").text(html);
+      $("#source-modal").modal();
+    });
+  });
+</script>
+
+<!-- Twitter Bootstrap -->
+<script src="js/bootstrap.min.js"></script>
+
+<!-- Material Design for Bootstrap -->
+<script src="js/material.js"></script>
+<script src="js/ripples.min.js"></script>
+<script>
+  $.material.init();
+</script>
+
+
+<!-- Sliders -->
+<script src="js/jquery.nouislider.min.js"></script>
+<script>
+  $(function () {
+    $.material.init();
+    $(".shor").noUiSlider({
+      start: 40,
+      connect: "lower",
+      range: {
+        min: 0,
+        max: 100
+      }
+    });
+
+    $(".svert").noUiSlider({
+      orientation: "vertical",
+      start: 40,
+      connect: "lower",
+      range: {
+        min: 0,
+        max: 100
+      }
+    });
+  });
+</script>
+
+<!-- Dropdown.js -->
+<script src="js/jquery.dropdown.js"></script>
+<script>
+  $("#dropdown-menu select").dropdown();
+</script>
+
+
+
+
+</body>
+</html>
